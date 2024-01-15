@@ -4,6 +4,8 @@ w = np.random.random((1,3)).T
 print(f'previous weights = {w}')
 def sigmoid(x):
 	return 1/(1+np.exp(-x))
+def reLu(x):
+	return max(0,x)
 in_train=np.array([[1,1,0],
 				   [1,0,0],
 				   [0,0,1],
